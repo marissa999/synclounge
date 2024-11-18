@@ -2,7 +2,7 @@
 [docker-version-badge]: https://img.shields.io/docker/v/marissa999/synclounge?label=Docker&sort=semver&style=for-the-badge
 [docker-latest-size-badge]: https://img.shields.io/docker/image-size/marissa999/synclounge?sort=semver&style=for-the-badge
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/marissa999/synclounge?style=for-the-badge
-[npm-badge]: https://img.shields.io/npm/v/synclounge?style=for-the-badge
+[npm-badge]: https://img.shields.io/npm/v/littles-moe-synclounge?style=for-the-badge
 [dependencies-badge]: https://img.shields.io/david/marissa999/synclounge?style=for-the-badge
 [devdependencies-badge]: https://img.shields.io/david/dev/marissa999/synclounge?style=for-the-badge
 [license-badge]: https://img.shields.io/github/license/marissa999/synclounge?style=for-the-badge
