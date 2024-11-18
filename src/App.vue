@@ -11,22 +11,6 @@
     >
       <v-app-bar-nav-icon @click="SET_LEFT_SIDEBAR_OPEN" />
 
-      <router-link
-        :to="{ name: 'RoomCreation' }"
-      >
-        <picture>
-          <source
-            srcset="@/assets/images/logos/logo-small-light.png"
-            :media="smallLogoMedia"
-          >
-          <img
-            height="42"
-            src="@/assets/images/logos/logo-long-light.png"
-            style="vertical-align: middle;"
-          >
-        </picture>
-      </router-link>
-
       <TheNowPlayingChip
         v-if="showNowPlaying"
         class="pl-4"
@@ -52,30 +36,6 @@
           <v-icon>fullscreen</v-icon>
         </v-btn>
 
-        <v-btn
-          v-for="item in links"
-          :key="item.title"
-          small
-          tag="a"
-          class="hidden-sm-and-down"
-          text
-          :href="item.href"
-          :target="item.target"
-        >
-          {{ item.title }}
-        </v-btn>
-
-        <DonateDialog v-slot="{ on, attrs }">
-          <v-btn
-            small
-            class="hidden-sm-and-down"
-            text
-            v-bind="attrs"
-            v-on="on"
-          >
-            Donate ♥
-          </v-btn>
-        </DonateDialog>
       </v-toolbar-items>
 
       <router-view name="rightSidebarButton" />
