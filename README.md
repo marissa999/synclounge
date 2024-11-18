@@ -1,23 +1,23 @@
-[github-release-badge]: https://img.shields.io/github/workflow/status/synclounge/synclounge/release?label=release&style=for-the-badge
-[docker-version-badge]: https://img.shields.io/docker/v/synclounge/synclounge?label=Docker&sort=semver&style=for-the-badge
-[docker-latest-size-badge]: https://img.shields.io/docker/image-size/synclounge/synclounge?sort=semver&style=for-the-badge
-[docker-pulls-badge]: https://img.shields.io/docker/pulls/synclounge/synclounge?style=for-the-badge
+[github-release-badge]: https://img.shields.io/github/workflow/status/marissa999/synclounge/release?label=release&style=for-the-badge
+[docker-version-badge]: https://img.shields.io/docker/v/marissa999/synclounge?label=Docker&sort=semver&style=for-the-badge
+[docker-latest-size-badge]: https://img.shields.io/docker/image-size/marissa999/synclounge?sort=semver&style=for-the-badge
+[docker-pulls-badge]: https://img.shields.io/docker/pulls/marissa999/synclounge?style=for-the-badge
 [npm-badge]: https://img.shields.io/npm/v/synclounge?style=for-the-badge
-[dependencies-badge]: https://img.shields.io/david/synclounge/synclounge?style=for-the-badge
-[devdependencies-badge]: https://img.shields.io/david/dev/synclounge/synclounge?style=for-the-badge
-[license-badge]: https://img.shields.io/github/license/synclounge/synclounge?style=for-the-badge
+[dependencies-badge]: https://img.shields.io/david/marissa999/synclounge?style=for-the-badge
+[devdependencies-badge]: https://img.shields.io/david/dev/marissa999/synclounge?style=for-the-badge
+[license-badge]: https://img.shields.io/github/license/marissa999/synclounge?style=for-the-badge
 [app-badge]: https://img.shields.io/website?label=App&style=for-the-badge&up_message=online&url=https%3A%2F%2Fapp.synclounge.tv
-[release-action-link]: https://github.com/synclounge/synclounge/actions?query=workflow%3Arelease+branch%3Amaster "Release action"
-[dockerhub-link]: https://hub.docker.com/r/synclounge/synclounge "Docker images of SyncLounge"
-[dockerhub-tags-link]: https://hub.docker.com/r/synclounge/synclounge/tags "Docker tags of Synclounge"
-[docker-microbadger-link]: https://microbadger.com/images/synclounge/synclounge "Docker size"
+[release-action-link]: https://github.com/marissa999/synclounge/actions?query=workflow%3Arelease+branch%3Amaster "Release action"
+[dockerhub-link]: https://hub.docker.com/r/marissa999/synclounge "Docker images of SyncLounge"
+[dockerhub-tags-link]: https://hub.docker.com/r/marissa999/synclounge/tags "Docker tags of Synclounge"
+[docker-microbadger-link]: https://microbadger.com/images/marissa999/synclounge "Docker size"
 [npm-link]: https://www.npmjs.com/package/synclounge "NPM package"
-[dependencies-link]: https://david-dm.org/synclounge/synclounge
-[devdependencies-link]: https://david-dm.org/synclounge/synclounge?type=dev
+[dependencies-link]: https://david-dm.org/marissa999/synclounge
+[devdependencies-link]: https://david-dm.org/marissa999/synclounge?type=dev
 [app-link]: https://app.synclounge.tv
 [license-link]: https://opensource.org/licenses/MIT "MIT License"
 
-![SyncLounge](https://github.com/synclounge/synclounge/raw/master/src/assets/images/logos/logo-long-dark.png)
+![SyncLounge](https://github.com/marissa999/synclounge/raw/master/src/assets/images/logos/logo-long-dark.png)
 
 [![App][app-badge]][app-link]
 [![npm][npm-badge]][npm-link]
@@ -30,6 +30,13 @@
 [![License][license-badge]][license-link]
 
 SyncLounge (Previously PlexTogether) is a tool to sync [Plex](https://plex.tv) content across multiple players in multiple locations.
+
+## Changes to upstream
+
+I decided to change a few things
+
+- Remove Branding + Links to Github and Discord
+- Adjust colours
 
 ## How it works
 
@@ -104,11 +111,11 @@ Using the Docker image is the easiest path because it works out of the box.
 You can get it running immediately by
 
 ```sh
-docker pull synclounge/synclounge
-docker run -p 8088:8088 synclounge/synclounge:latest
+docker pull marissachan/synclounge
+docker run -p 8088:8088 marissachan/synclounge:latest
 ```
 
-You can use environment variables to change any of the [default configuration](https://github.com/synclounge/synclounge/blob/master/config/defaults.js).  
+You can use environment variables to change any of the [default configuration](https://github.com/marissa999/synclounge/blob/master/config/defaults.js).  
 Note that nested objects and arrays can be passed as environment variables in the following way:
 
 ```
@@ -123,7 +130,7 @@ SERVERS='[{"name":"My Server","location":"Mothership","url":"https://myserver.co
 Make sure you have nodejs installed.
 
 ```sh
-sudo npm install -g synclounge
+sudo npm install -g littles-moe-synclounge
 ```
 
 Then you can run it:
@@ -132,7 +139,7 @@ Then you can run it:
 synclounge
 ```
 
-If you want to change any of the [default configuration](https://github.com/synclounge/synclounge/blob/master/config/defaults.js), you can either use environment variables with the same name, use command line arguments, or use a config file and run synclounge like `synclounge --config_file /path/to/config.json`
+If you want to change any of the [default configuration](https://github.com/marissa999/synclounge/blob/master/config/defaults.js), you can either use environment variables with the same name, use command line arguments, or use a config file and run synclounge like `synclounge --config_file /path/to/config.json`
 
 ### Sample Nginx config
 
