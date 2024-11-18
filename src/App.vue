@@ -132,7 +132,6 @@ export default {
     TheSidebarLeft: () => import('@/components/TheSidebarLeft.vue'),
     TheUpnextDialog: () => import('@/components/TheUpnextDialog.vue'),
     TheNowPlayingChip: () => import('@/components/TheNowPlayingChip.vue'),
-    DonateDialog: () => import('@/components/DonateDialog.vue'),
     TheAppBarCrumbs: () => import('@/components/TheAppBarCrumbs.vue'),
   },
 

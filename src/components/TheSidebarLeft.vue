@@ -65,7 +65,6 @@ export default {
 
   components: {
     TheSettingsDialog: () => import('@/components/TheSettingsDialog.vue'),
-    DonateDialog: () => import('@/components/DonateDialog.vue'),
   },
 
   computed: {
