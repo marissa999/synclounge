@@ -2,7 +2,7 @@
 [docker-version-badge]: https://img.shields.io/docker/v/marissa999/synclounge?label=Docker&sort=semver&style=for-the-badge
 [docker-latest-size-badge]: https://img.shields.io/docker/image-size/marissa999/synclounge?sort=semver&style=for-the-badge
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/marissa999/synclounge?style=for-the-badge
-[npm-badge]: https://img.shields.io/npm/v/littles-moe-synclounge?style=for-the-badge
+[npm-badge]: https://img.shields.io/npm/v/synclounge-less?style=for-the-badge
 [dependencies-badge]: https://img.shields.io/david/marissa999/synclounge?style=for-the-badge
 [devdependencies-badge]: https://img.shields.io/david/dev/marissa999/synclounge?style=for-the-badge
 [license-badge]: https://img.shields.io/github/license/marissa999/synclounge?style=for-the-badge
@@ -17,7 +17,7 @@
 [app-link]: https://app.synclounge.tv
 [license-link]: https://opensource.org/licenses/MIT "MIT License"
 
-![SyncLounge](https://github.com/marissa999/synclounge/raw/master/src/assets/images/logos/logo-long-dark.png)
+![SyncLounge-Less](https://github.com/marissa999/synclounge/raw/master/src/assets/images/logos/logo-long-dark.png)
 
 [![App][app-badge]][app-link]
 [![npm][npm-badge]][npm-link]
@@ -130,7 +130,7 @@ SERVERS='[{"name":"My Server","location":"Mothership","url":"https://myserver.co
 Make sure you have nodejs installed.
 
 ```sh
-sudo npm install -g littles-moe-synclounge
+sudo npm install -g synclounge-less
 ```
 
 Then you can run it:
